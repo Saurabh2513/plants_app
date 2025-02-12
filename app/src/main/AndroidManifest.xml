@@ -13,9 +13,12 @@
         android:theme="@style/Theme.Shopy"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activity.CreateAccount"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.LogInActivity"
             android:exported="false"
-            android:theme="@style/Theme.Shopy.NoStatusBar"/>
+            android:theme="@style/Theme.Shopy.NoStatusBar" />
         <activity
             android:name=".ui.activity.StartActivity"
             android:exported="true"

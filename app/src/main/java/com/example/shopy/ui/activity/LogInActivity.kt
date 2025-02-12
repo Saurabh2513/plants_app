@@ -26,5 +26,10 @@ class LogInActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        binding.creatac.setOnClickListener {
+            val intent = Intent(this, CreateAccount::class.java)
+            startActivity(intent)
+        }
+
     }
 }
