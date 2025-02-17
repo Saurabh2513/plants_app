@@ -13,11 +13,12 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
+        renderscriptTargetApi = 21
+        renderscriptSupportModeEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
+
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -43,17 +44,9 @@ android {
 
 
 dependencies {
-    // Retrofit
-    implementation (libs.retrofit)
-    implementation (libs.converter.gson)
 
-    // ViewModel and LiveData
-    implementation (libs.androidx.lifecycle.viewmodel.ktx.v262)
-    implementation (libs.androidx.lifecycle.livedata.ktx.v262)
-    implementation (libs.androidx.fragment.ktx)
 
-    implementation (libs.circleindicator)
-    implementation ("com.google.android.material:material:1.9.0")
+
 
 
     implementation(libs.androidx.core.ktx)
@@ -66,6 +59,7 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.activity)
+    implementation(libs.androidx.recyclerview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
